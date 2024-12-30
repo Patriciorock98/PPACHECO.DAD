@@ -95,7 +95,6 @@ img {
 .navegacion-principal {
     flex-direction: column;
     display: flex;
-    /* background-color: var(--celeste); */
     margin-bottom: 2rem;
 }
 
@@ -115,7 +114,6 @@ img {
 }
 
 
-
 @media (min-width: 768px) {
     .navegacion-principal {
         flex-direction: row;
@@ -132,7 +130,7 @@ img {
 /** Productos **/
 
 
-.cards {
+.lista-productos {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -174,7 +172,7 @@ img {
     margin: 1rem 0;
     text-align: center;
     line-height: 2rem;
-}
+} */
 
 /* Formulario */
 .formulario {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,8 @@
         rel="stylesheet">
     <!--CND Icons Boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Productos</title>
+    <meta name="description" content="Solapa productos de mi Tienda">
 </head>
 
 <body>
@@ -33,128 +35,26 @@
             <a href="/productos.html">Productos</a>
             <a href="/contacto.html">Contacto</a>
             <a href="/reseñas.html">Reseñas</a>
+            <a href="/carrito.html">Carrito de Compras</a>
         </nav>
     </section>
 
     <main>
-        <section class="cards">
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp-Image-2024-10-30-at-00.38.35.webp" alt="Taza celeste y negro">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Taza 1</p>
-                        <p class="precio__producto">$1500</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp-Image-2024-11-08-at-10.07.21.webp" alt="Taza nude">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Taza 2</p>
-                        <p class="precio__producto">$1500</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp-Image-2024-11-08-at-10.07.23.webp" alt="Taza azul">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Taza 3</p>
-                        <p class="precio__producto">$1500</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp-Image-2024-11-08-at-10.07.26.webp" alt="Taza blanco y rojo">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Taza 4</p>
-                        <p class="precio__producto">$1500</p>
-                    </div>
-                </a>
-            </div>  
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp-Image-2024-11-08-at-10.07.34.webp"
-                        alt="Vasos transparentes lizos">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Vasos 1</p>
-                        <p class="precio__producto">$3000</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp-Image-2024-11-08-at-10.07.36.webp"
-                        alt="Vasos transparentes rayados">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Vasos 2</p>
-                        <p class="precio__producto">$3000</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp Image 2024-10-29 at 23.59.49.webp" alt="Termo celeste y rojo">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Termo 2</p>
-                        <p class="precio__producto">$1500</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp Image 2024-10-30 at 00.00.16.webp" alt="Tupper tapa violeta">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Tupper 1</p>
-                        <p class="precio__producto">$2000</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp Image 2024-10-30 at 00.00.18.webp" alt="Tupper tapa rosa">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Tupper 2</p>
-                        <p class="precio__producto">$2000</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp Image 2024-10-30 at 00.00.23.webp"
-                        alt="Tupper tapa violeta y turqueza">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Tupper 3</p>
-                        <p class="precio__producto">$2000</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="/contacto.html">
-                    <img src="/imagenes/webp/WhatsApp-Image-2024-10-30-at-00.38.36.webp" alt="Mates">
-                    <div class="producto__informacion">
-                        <p class="nombre__producto">Mates</p>
-                        <p class="precio__producto">$2000 c/u</p>
-                    </div>
-                </a>
-            </div>
-
+        <section class="lista-productos">
+            <article data-id="" class="card">
+                <h3 class="nombre__producto"></h3>
+                <img src="" alt="" width="400px">
+                <p></p>
+                <p class="precio__producto">$</p>
+                <button type="button" class="boton">Agregar al carrito</button>
+            </article>
         </section>
-
     </main>
 
+    <script src="/js/productos.js"></script>
+    <script>
+        cargarProductos();
+    </script>
     <footer class="footer">
         <p class="footer__texto">D T U P.- Todos los derechos reservados.</p>
     </footer>
